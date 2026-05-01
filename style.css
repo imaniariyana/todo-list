@@ -37,7 +37,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
   border: 3px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur (10px);
+  backdrop-filter: blur(10px);
 }
 
 .todo-list-title {
@@ -76,12 +76,22 @@ body {
   color: #fff;
   font-size: 1.1rem;
   background: rgba(255, 194, 209, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.18);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.input-area button::hover {
-  transform: scale(1.1);
-  background: #ff6f91;
+.input-area button:hover {
+  background: rgba(255, 194, 209, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.todos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#task-list {
+  list-style: circle;
+  width: 100%;
 }
