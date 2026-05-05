@@ -87,7 +87,9 @@ body {
 }
 
 .todos-container {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -130,11 +132,50 @@ body {
   transform: scale(1.1);
 }
 
-#task-list li .checkbox:checked::before {
+#task-list li .task-checkbox:checked::before {
   content: "\2713";
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+}
+
+#task-list li span {
+  flex: 1;
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.task-buttons button {
+  background: rgba(255, 194, 209, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.task-buttons .edit-btn {
+  background: rgba(185, 62, 238, 0.5);
+}
+
+.task-buttons .delete-btn {
+  background: rgba(255, 0, 0, 0.5);
 }
