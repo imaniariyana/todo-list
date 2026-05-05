@@ -16,6 +16,17 @@
     <div class="container">
       <div class="todo-app">
         <h1 class="todo-list-title">To-Do List</h1>
+        <div class="stat-container">
+          <div class="details">
+            <h3>Keep it Up!</h3>
+            <div id="progressbar">
+              <div id="progress"></div>
+            </div>
+          </div>
+          <div class="stats-number">
+            <p id="numbers">0 / 0</p>
+          </div>
+        </div>
 
         <form class="input-area" id="todo-form">
           <input type="text" id="task-input" placeholder="Add a new task..." />
@@ -34,7 +45,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.9.1/tsparticles.confetti.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
